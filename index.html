@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="img/png" href="sql.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLGIT - Your SQL Interface</title>
+</head>
+<body>
+    <div class="section">
+        <div id="menu">
+            <div class="leftmenu">
+                <font color="white">SQL</font><font color="#00aaff">GIT</font>
+            </div>
+            <div class="rightmenu">
+                <ul>
+                 <a href="index.html">
+                     <li id="home">Home</li> 
+                 </a> 
+                 <a href="library.html">
+                    <li id="library">Library</li>
+                </a>
+                 <a href="https://github.com/ASAN-11/PythonGit">
+                    <li id="git">GitHub</li>
+                </a>
+                </ul>
+            </div>
+          </div>
+          <div class="search">
+            <h1 style="color: rgb(0, 66, 128);">Have Fun with Ultimate Interface for SQL!</h1>
+            <h3 style="color: #00aaff;">Search the required and have your work done.</h3>
+            <select name="snippets" id="list" onchange="myAnchor(this.value)">
+              <option value="select_all">SELECT All
+              <option value="select">SELECT Syntax
+              <option value="nov2023_update">SQL Library
+              </select>
+          </div>
+        <div class="queries">
+          <div class="riddles" id="select_all">
+            <div class="user"><h2>SQL 'SELECT' All</h2><p>Published: 25-10-2023 18:37 PM IST</p></div>
+            <div class="content"><p>How can I select all rows from the table?</p>
+            <br>
+            <p class="answer">Solution: </p>
+            <span>SELECT * FROM Customers;</span>
+            </div>
+          </div>
+          <div class="riddles" id="select">
+            <div class="user"><h2>SELECT Command</h2><p>Published: 25-10-2023 18:37 PM IST</p></div>
+            <div class="content"><p>Why we use SELECT in SQL?</p>
+            <br>
+            <p class="answer">Solution: </p>
+            <span>The SELECT statement is used to select data from a database.<br>
+                <b>SELECT column1, column2, ...<br>
+                  FROM table_name;</b></span>
+        </div>
+          </div>
+          <div class="riddles" style="background-color: rgb(0, 43, 128);" id="nov2023_update">
+            <div class="user"><h2><font color="white">SQLGIT x Riddler</font></h2><p style="color: white;">New Update: November 2023</p></div>
+            <div class="content"><p style="color: #fff;">New SQL Library has been introduced in corporation with Riddler!</p>
+            <br>
+            <p class="answer" style="color: #fff;">Webpage Link: </p>
+            <span><a href="library.html" style="text-decoration: none;color: #79b1f1;">Click Here</a></span>
+        </div>
+          </div>
+        </div>
+    </div>
+    <footer>
+      <div id="foothead">
+      <div class="foot">
+      <font color="white">SQL</font><font color="#00aaff">GIT</font></div>
+      <div class="medias">
+          <a href="https://github.com/ASAN-11"><i class="fa fa-github"></i></a>
+          <a href="#"></a><i class="fa fa-codepen"></i></a>
+          <a href="#"></a><i class="fa fa-linkedin"></i></a>
+          <a href="#"></a><i class="fa fa-youtube-play"></i></a>
+      </div></div>
+    <script>
+     function myAnchor(value){
+      var top = document.getElementById(value).offsetTop;
+      window.scrollTo(0, top);
+        //document.getElementById(value).scrollIntoView();
+    }
+    </script>
+</body>
+</html>

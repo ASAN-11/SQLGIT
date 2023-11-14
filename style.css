@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.section{
+    background-image: url(sqbg.avif);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+#menu{
+    color: white;
+    display: flex;
+    z-index: 1000;
+    background-color: #242424;
+}
+.leftmenu{
+    padding: 16px 0px;
+    margin: 0px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3rem;
+}
+.rightmenu{
+    padding: 32px 0px;
+    margin-left: 1016px;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(219, 219, 219);
+}
+.rightmenu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    font-size: 1.15rem;
+    font-weight:bold;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.rightmenu ul a{
+    text-decoration: none;
+    color: rgb(0, 154, 250);
+    font-family: 'Poppins', sans-serif;
+}
+
+.rightmenu ul li::after{
+    content: '';
+    width:0;
+    height:2px;
+    background: rgb(255, 240, 240);
+    display: block;
+    margin: auto;
+    transition:0.5s;
+ }
+ .rightmenu ul li:hover::after{
+     
+    width: 100%;
+ }
+
+ #issues::after{
+    content: '';
+    width:100%;
+    height:2px;
+    background: rgb(255, 240, 240);
+    display: block;
+    margin: auto;
+ }
+
+ .search{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-image: url('header.jpg');
+    background-size: cover;
+    padding: 31px 15px;
+ }
+
+ .search select{
+    width: 600px;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 2px 8px;
+ }
+
+ .queries{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .riddles{
+    width: 80%;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 10px;
+ }
+
+ .riddles h2{
+    font-size: 20px;
+    color: #004cff;
+ }
+
+ .riddles .user p{
+    font-size: 12px;
+    color: #8b8b8b;
+ }
+
+ .riddles .content p{
+    font-size: 18px;
+    color: #000000;
+ }
+
+ .riddles .content .answer{
+    font-size: 18px;
+    color: #000000;
+ }
+
+ .riddles .content span{
+    font-size: 17px;
+    color: #3a42b1;
+ }
+ footer{
+    height: 90px;
+    background-color: #000;
+  }
+ 
+  footer #foothead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+ 
+  footer .foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+  }
+ 
+  footer .medias{
+    color: #fff;
+    padding-right: 28px;
+  }
+ 
+ .medias a{
+    color: #ffffff;
+    text-decoration: none;
+ }
+ 
+  .medias .fa{
+     font-size: 20px;
+     padding-left: 18px;
+  }
+
+  
+
+ @media (max-width: 650px){
+    .riddles{
+        height: 400px;
+    }
+
+    .search select{
+        width: 400px;
+    }
+ }
+
+
+@media (max-width: 450px){
+
+    .section{
+        width: 100%;
+        height: 300vh;
+    }
+
+    #menu{
+        padding-bottom: 0vh;
+    }
+
+     #menu .rightmenu{
+         display: none;
+     }
+
+}
+
+@media (max-width: 1035px){
+
+     #menu .rightmenu{
+         display: none;
+     }
+}
+
+
+@media (max-width: 1499px){
+
+     #menu .rightmenu{
+         display: none;
+     }
+
+}
+
+@media (min-width: 1601px){
+
+    .rightmenu{
+        margin-left: 1093px;
+    }
+
+}
+
+@media (min-width: 1701px){
+
+    .rightmenu{
+        margin-left: 1183px;
+    }
+
+}
+
+@media (min-width: 1801px){
+
+    .rightmenu{
+        margin-left: 1253px;
+    }
+
+}
+
+@media (min-width: 1901px){
+
+    .rightmenu{
+        margin-left: 1299px;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    .section{
+        width: 100%;
+        height: 300vh;
+    }
+
+    #menu{
+        padding-bottom: 0vh;
+    }
+
+     #menu .rightmenu{
+         display: none;
+     }
+
+    .search select{
+        width: 260px;
+    }
+
+    footer .foot{
+        font-size: 30px;
+    }
+    }
+
+    @media (max-width: 380px){
+        footer .foot{
+            font-size: 20px;
+            padding-left: 17px;
+        }
+
+        .medias .fa{
+            font-size: 13px;
+            padding-left: 13px;
+         }
+
+         footer{
+            height: 70px;
+         }
+
+    }
